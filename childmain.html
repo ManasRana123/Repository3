@@ -14,6 +14,56 @@
    
     <title>Your Account</title>
 	<style>
+		.chat {
+			background-color: #fff;
+			border-radius: 5px;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			margin: 20px auto;
+			max-width: 600px;
+			padding: 20px;
+		}
+		.message {
+			display: flex;
+			margin-bottom: 10px;
+		}
+		.message img {
+			border-radius: 50%;
+			height: 50px;
+			margin-right: 10px;
+			width: 50px;
+		}
+		.message-content {
+			background-color: #f2f2f2;
+			border-radius: 5px;
+			padding: 10px;
+			width: 100%;
+		}
+		.message-content p {
+			margin: 0;
+			padding: 0;
+		}
+		.input {
+			display: flex;
+			margin-top: 20px;
+		}
+		.input input {
+			border: none;
+			border-radius: 5px;
+			flex-grow: 1;
+			font-size: 16px;
+			padding: 10px;
+		}
+		.input button {
+			background-color: #4CAF50;
+			border: none;
+			border-radius: 5px;
+			color: #fff;
+			cursor: pointer;
+			font-size: 16px;
+			padding: 10px;
+			margin-left: 10px;
+		}
+
 		body {
 			font-family: Arial, sans-serif;
 			margin: 0;
@@ -122,6 +172,33 @@
 			<marquee behavior="scroll" direction="left"  ><img style="width: 500px; margin-right: 10%;" src="child1.png" alt="ad"><img style="width: 500px; margin-right: 10%;" src="child2.png" alt="ad"></marquee><br>
            
         </p>
+		<header>Chats:</header>
+
+		<div class="chat">
+			<div class="message">
+				<img src="Cool A.jpg" alt="User Avatar">
+				<div class="message-content">
+					<p>Hello!</p>
+				</div>
+			</div>
+			<div class="message">
+				<div class="message-content">
+					<p>Can you send me some Cash ASAP?</p>
+				</div>
+				<img src="little-indian-asian-boy-showing-thumbs-up-little-indian-asian-boy-showing-thumbs-up-150320185-removebg-preview.png" alt="User Avatar">
+			</div>
+			<div class="message">
+				<img src="Cool A.jpg" alt="User Avatar">
+				<div class="message-content">
+					<p style="color: firebrick;">Avp Sent Rs.100</p>
+				</div>
+				
+			</div>
+			<div class="input">
+				<input type="text" placeholder="Type your message...">
+				<button>Send</button>
+			</div>
+		</div>
 
 </body>
 <link rel="stylesheet" href="style.css">
